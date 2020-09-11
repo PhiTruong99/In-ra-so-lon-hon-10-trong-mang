@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In ra các số lớn hơn 10 trong mảng</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử
+            //Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10
+            //input nhập vào mảng có 10 số
+            //số nào lớn hơn 10 thì in ra
+            var n = parseInt(prompt("Nhập vào n số phần từ của mảng : "));
+            var num =[];
+            var nums =[];
+            for ( var i=0;i<n;i++){
+                num[i] = parseInt(prompt("Nhập vào phần tử thứ "+i));
+            }
+            for (var i=0;i<num.length;i++){
+                if(num[i]>10){           
+                    let a = num[i];
+                    nums.push(a);
+                }
+            }
+            document.write("Số nguyên lớn hơn 10 trong mảng là: "+ nums+" ");
+        </script>
+    </body>
+</html>
